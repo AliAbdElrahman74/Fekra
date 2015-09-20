@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>My Page</title>
+<meta charset="UTF-8">
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	
+
+	<div class="container">
+		<section id = "background">
+			
+			<h1 id="home_p">Fekra Student Activity</h1>
+		</section>
+
+	</div>
+
+	
+	<nav>
+     
+     <ul class="NAV">
+       <li class="NAVl">Home</li>
+       <li class="NAVl">About</li>
+       <li class="NAVl">Projects</li>
+       <li class="NAVl">Sponsors</li>
+       <li class="NAVl">Team</li>
+       <li class="NAVl">Contact Us</li>
+       <img class = "logo" src="/assets/fekra_logo.png"> 
+     </ul>
+     </nav>
+
+
+
+	<section id="about">
+	
+		<h1 style="text-align:center; padding-top:50px; padding-bottom:0px; margin:0px; font-size:60px;">Who We Are ?!</h1>
+		</br>
+		<p style="font-size:40px; padding-left:10px;">Hello it is fekra right here man,we are 
+		going to talk about us here, fekra is a student activity stublished
+		in 2012 we are the heros of FCI</p>
+		</br>
+		</br>
+		</br>
+		</br>
+		<a href="" id = "learn">Learn More </a>
+	</section >
+
+    <hr>
+    <section id = "about">
+     
+
+     <% @projects.each do |t|  %>
+	
+<%= t.title %>
+<%= t.description %>
+
+<%end%>
+
+    </section>
+
+</body>
+
+</html>
