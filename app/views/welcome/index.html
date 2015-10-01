@@ -49,17 +49,38 @@
 	</section >
 
     <hr>
-    <section id = "about">
+    
      
 
-     <% @projects.each do |t|  %>
-	
-<%= t.title %>
-<%= t.description %>
+    
+    	 <% @projects.each do |t|  %>
+    	 <section id = "about">
 
-<%end%>
+		<div id = "text">
+		 <h1 id="ProjectTitle"><%= t.title %> </h1>
+		<br>
+		 <p  id = "ProjectDesc" > <%= t.description %> </p>
+		</div>
+		<div id="text_img">
+		<img src= <%=t.image_url%> alt="damn" >
+		</div>
 
+		<br> 
+		 </section>
+		<%end%>
+
+    <section class = "sponser">
+
+    <img src = "/assets/Background-fish-Mobile-HD-Wallpapers.jpg" alt = "Hi" > 
+    <img src = "/assets/Background-fish-Mobile-HD-Wallpapers.jpg" alt = "Hi"  > 
+    <img src = "/assets/Background-fish-Mobile-HD-Wallpapers.jpg" alt = "Hi"  > 
+    <img src = "/assets/Background-fish-Mobile-HD-Wallpapers.jpg" alt = "Hi"  > 
+    <img src = "/assets/Background-fish-Mobile-HD-Wallpapers.jpg" alt = "Hi"  > 
+    <img src = "/assets/Background-fish-Mobile-HD-Wallpapers.jpg" alt = "Hi"  > 
+    
     </section>
+
+
 
 </body>
 
